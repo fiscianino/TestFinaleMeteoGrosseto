@@ -25,11 +25,7 @@
                                 <Label Text="{Binding values.temperatureMax, StringFormat='Temperatura massima: {0} °C'}" FontSize="Small" />
                                 <Label Text="{Binding values.temperatureMin, StringFormat='Temperatura minima: {0} °C'}" FontSize="Small" />
                                 <Label Text="{Binding values.sunriseTime, StringFormat='Alba: {0:t}'}" FontSize="Small" />
-                                <Image
-                                    Source="download.jpg"
-                                     HeightRequest="185"
-                                        Aspect="AspectFit"
-                                         SemanticProperties.Description="dot net bot in a race car number eight"></Image>
+                              <Label Text="😊" />
                               
                                 <Label Text="{Binding values.sunsetTime, StringFormat='Tramonto: {0:t}'}" FontSize="Small" />
                             </VerticalStackLayout>
