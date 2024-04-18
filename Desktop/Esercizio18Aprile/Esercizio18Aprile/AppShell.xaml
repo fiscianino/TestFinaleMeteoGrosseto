@@ -4,8 +4,8 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Esercizio18Aprile"
-    BackgroundColor="MediumVioletRed"
-    Title="Esercizio18Aprile">
+    Title="Esercizio18Aprile"
+    BackgroundColor="MediumVioletRed">
 
     <Shell.FlyoutHeader>
         <ContentView HeightRequest="200">
