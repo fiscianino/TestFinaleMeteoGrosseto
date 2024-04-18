@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Esercizio18Aprile.MainPage"
+              x:Name="MainGrosseto"
+             Title="Città di Grosseto"
+          >
+  
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="comune_grosseto_citta.jpg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight"></Image>
+            <StackLayout Padding="20">
+                <CollectionView ItemsSource="{Binding CittaDiGrosseto}"  x:Name="CittaCollectionView"  >
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Label Text="Sindaco:"></Label>
+                                <Label Text="{Binding Sindaco}" FontSize="Large" FontAttributes="Bold" />
+                                <Label Text="Numero di Abitanti:"></Label>
+                                <Label Text="{Binding Abitanti}" FontSize="Large" FontAttributes="Bold" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
